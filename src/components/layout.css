@@ -14,6 +14,21 @@ body, input, select, textarea {
     background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 
+ul#icons li {
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 200px;
+    height: 200px;
+}
+ul#icons li div {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 #footer a {
     @apply .border-b .border-dotted;
 }
