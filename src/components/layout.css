@@ -3,3 +3,17 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+
+body, input, select, textarea {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+#header, #footer {
+    background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+}
+
+#footer a {
+    @apply .border-b .border-dotted;
+}
