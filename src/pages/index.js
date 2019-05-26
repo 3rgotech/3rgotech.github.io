@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Img from "gatsby-image"
 
@@ -33,12 +33,9 @@ const IndexPage = () => (
           <Logo />
         </div>
         <h1 className="text-4xl mt-4">
-          Hi, I'm <strong>Photon</strong>, another fine<br />
-          little freebie from <a href="http://html5up.net">HTML5 UP</a>.
+          Développement Web <span className="font-bold">&</span> Formation
         </h1>
-        <p className="text-xl">Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-          lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-        <ul className="actions relative text-center mt-32 pb-2">
+        <ul className="actions relative text-center mt-64 pb-2">
           <li>
             <ScrollLink
               to="one"
@@ -126,7 +123,7 @@ const IndexPage = () => (
             Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
           </p>
           <ul className="actions text-center mt-10 pb-2">
-            <li><a href="#" className="btn btn-gray">More</a></li>
+            <li><a href="/" className="btn btn-gray">More</a></li>
           </ul>
         </div>
         <div className="w-3/4 md:w-1/4 m-6">
@@ -138,7 +135,7 @@ const IndexPage = () => (
             Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
           </p>
           <ul className="actions text-center mt-10 pb-2">
-            <li><a href="#" className="btn btn-gray">More</a></li>
+            <li><a href="/" className="btn btn-gray">More</a></li>
           </ul>
         </div>
         <div className="w-3/4 md:w-1/4 m-6">
@@ -150,7 +147,7 @@ const IndexPage = () => (
             Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
           </p>
           <ul className="actions text-center mt-10 pb-2">
-            <li><a href="#" className="btn btn-gray">More</a></li>
+            <li><a href="/" className="btn btn-gray">More</a></li>
           </ul>
         </div>
         <div className="w-3/4 md:w-1/4 m-6">
@@ -162,7 +159,7 @@ const IndexPage = () => (
             Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
           </p>
           <ul className="actions text-center mt-10 pb-2">
-            <li><a href="#" className="btn btn-gray">More</a></li>
+            <li><a href="/" className="btn btn-gray">More</a></li>
           </ul>
         </div>
         <div className="w-3/4 md:w-1/4 m-6">
@@ -174,7 +171,7 @@ const IndexPage = () => (
             Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
           </p>
           <ul className="actions text-center mt-10 pb-2">
-            <li><a href="#" className="btn btn-gray">More</a></li>
+            <li><a href="/" className="btn btn-gray">More</a></li>
           </ul>
         </div>
       </div>
@@ -188,19 +185,19 @@ const IndexPage = () => (
           <input type="hidden" name="_subject" value="Contact via le site 3rgo.tech" />
           <input type="text" name="_gotcha" className="hidden" />
           <div class="mb-4">
-            <label class="block text-sm font-bold mb-2" for="name">
+            <label class="block text-sm font-bold mb-2" htmlFor="name">
               Nom
             </label>
             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Nom" />
           </div>
           <div class="mb-4">
-            <label class="block text-sm font-bold mb-2" for="email">
+            <label class="block text-sm font-bold mb-2" htmlFor="email">
               E-mail
             </label>
             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="_replyto" type="email" placeholder="E-mail" />
           </div>
           <div class="mb-4">
-            <label class="block text-sm font-bold mb-2" for="message">
+            <label class="block text-sm font-bold mb-2" htmlFor="message">
               Message
             </label>
             <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Message" rows="6"></textarea>
@@ -216,11 +213,11 @@ const IndexPage = () => (
 
     <section id="footer" className="text-center text-white py-10">
       {/* <ul className="icons">
-              <li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
-              <li><a href="#" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
-              <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
-              <li><a href="#" className="icon alt fa-github"><span className="label">GitHub</span></a></li>
-              <li><a href="#" className="icon alt fa-envelope"><span className="label">Email</span></a></li>
+              <li><a href="/" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
+              <li><a href="/" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
+              <li><a href="/" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
+              <li><a href="/" className="icon alt fa-github"><span className="label">GitHub</span></a></li>
+              <li><a href="/" className="icon alt fa-envelope"><span className="label">Email</span></a></li>
             </ul> */}
       <ul className="copyright">
         <p className="lead">
