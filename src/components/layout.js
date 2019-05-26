@@ -12,7 +12,6 @@ import { StaticQuery, graphql } from "gatsby"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faChalkboardTeacher, faChartLine, faCode, faRulerCombined } from '@fortawesome/free-solid-svg-icons'
 
-
 import "./layout.css"
 
 const Layout = ({ children }) => {

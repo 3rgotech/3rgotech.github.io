@@ -8,21 +8,45 @@
 
 body, input, select, textarea {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.btn {
+    @apply .border .border-solid .rounded .py-3 .px-8 .uppercase .text-xl .font-bold .cursor-pointer;
+}
+.btn:hover {
+    @apply .outline-none .shadow-outline;
+}
+
+.btn-white {
+    @apply .border-white .text-white;
+}
+.btn-gray {
+    @apply .border-gray-700 .text-gray-700;
 }
 
 #header, #footer {
     background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 
-ul#icons li {
+section#two, section#four {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed;
+    background-image: url("../images/header.jpg");
+    background-size: auto, cover;
+}
+
+#icons > div {
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
-ul#icons li div {
+
+#icons > div > div {
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
