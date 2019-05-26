@@ -11,8 +11,11 @@ body, input, select, textarea {
     font-weight: 300;
 }
 
+.btn-sm {
+    @apply .border .border-solid .rounded .py-2 .px-4 .uppercase .text-sm .font-bold .cursor-pointer;
+}
 .btn {
-    @apply .border .border-solid .rounded .py-3 .px-8 .uppercase .text-xl .font-bold .cursor-pointer;
+    @apply .border .border-solid .rounded .py-4 .px-8 .uppercase .text-xl .font-bold .cursor-pointer;
 }
 .btn:hover {
     @apply .outline-none .shadow-outline;

@@ -6,23 +6,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-const Logo = () => (<div className="w-3/4 mx-auto">
-  <StaticQuery
-    query={graphql`
-              query {
-                placeholderImage: file(relativePath: { eq: "logo.png" }) {
-                  childImageSharp {
-                    fluid(maxWidth: 300) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
-            `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-</div>)
+import Logo from "../components/logo"
 
 const IndexPage = () => (
   <Layout>
@@ -35,7 +19,7 @@ const IndexPage = () => (
         <h1 className="text-4xl mt-4">
           Développement Web <span className="font-bold">&</span> Formation
         </h1>
-        <ul className="actions relative text-center mt-64 pb-2">
+        <ul className="actions relative text-center mt-64 pb-3">
           <li>
             <ScrollLink
               to="one"
@@ -181,29 +165,29 @@ const IndexPage = () => (
       <div className="mx-auto">
         <div className="text-5xl pb-8 text-center">Contact</div>
         <div className="h-px bg-white w-1/4 mx-auto">&nbsp;</div>
-        <form action="https://formspree.io/romain@3rgo.tech" method="POST" class="w-3/4 md:w-1/2 mx-auto my-8">
+        <form action="https://formspree.io/romain@3rgo.tech" method="POST" className="w-3/4 md:w-1/2 mx-auto my-8">
           <input type="hidden" name="_subject" value="Contact via le site 3rgo.tech" />
           <input type="text" name="_gotcha" className="hidden" />
-          <div class="mb-4">
-            <label class="block text-sm font-bold mb-2" htmlFor="name">
+          <div className="mb-4">
+            <label className="block text-sm font-bold mb-2" htmlFor="name">
               Nom
             </label>
-            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Nom" />
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Nom" />
           </div>
-          <div class="mb-4">
-            <label class="block text-sm font-bold mb-2" htmlFor="email">
+          <div className="mb-4">
+            <label className="block text-sm font-bold mb-2" htmlFor="email">
               E-mail
             </label>
-            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="_replyto" type="email" placeholder="E-mail" />
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="_replyto" type="email" placeholder="E-mail" />
           </div>
-          <div class="mb-4">
-            <label class="block text-sm font-bold mb-2" htmlFor="message">
+          <div className="mb-4">
+            <label className="block text-sm font-bold mb-2" htmlFor="message">
               Message
             </label>
-            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Message" rows="6"></textarea>
+            <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Message" rows="6"></textarea>
           </div>
-          <div class="text-center">
-            <button class="btn btn-white" type="submit">
+          <div className="text-center">
+            <button className="btn btn-white" type="submit">
               Envoyer
             </button>
           </div>
