@@ -6,10 +6,10 @@ import SEO from "../components/seo"
 const NotFoundPage = () => (
   <SecondaryLayout>
     <SEO title="Mentions Légales" />
-    <div className="mx-auto text-gray-700 py-16 px-32">
+    <div className="mx-auto text-gray-700 p-4 md:py-16 md:px-32">
       <div className="text-5xl pb-8 text-center">Mentions Légales</div>
       <div className="h-px bg-gray-700 w-1/4 mx-auto">&nbsp;</div>
-      <div className="w-3/4 mx-auto my-8">
+      <div className="w-full md:w-3/4 mx-auto my-8">
         <p>Ipsum deserunt id adipisicing ad voluptate culpa deserunt aliquip culpa veniam. Cillum voluptate ipsum id enim Lorem officia proident excepteur do. Labore fugiat laboris occaecat sint. Consectetur non laboris id pariatur adipisicing. Sunt qui cupidatat occaecat aliquip. Nisi eu aliqua aute tempor consequat do est anim. Cillum culpa Lorem incididunt ad sint nulla sit exercitation ad enim.</p>
         <p>Consequat pariatur nostrud ut irure officia ea ad proident mollit nisi deserunt mollit id. Incididunt mollit nostrud ipsum deserunt ut fugiat esse voluptate eu. Aute proident id consectetur deserunt voluptate consectetur voluptate quis tempor quis consectetur. Exercitation nulla enim labore id voluptate cillum non tempor sint aliquip fugiat. Aute non esse et proident laborum magna nulla et eu ipsum. Amet officia sit excepteur quis voluptate qui exercitation ullamco pariatur consectetur. Velit enim cillum nostrud aliqua in aute dolor nulla laboris ea.</p>
         <p>Id incididunt et sit laborum mollit incididunt. Enim eu exercitation proident nulla. Reprehenderit non adipisicing deserunt cillum elit sint incididunt consequat nulla ipsum veniam tempor consectetur. Anim irure elit irure minim duis commodo aliquip est.</p>

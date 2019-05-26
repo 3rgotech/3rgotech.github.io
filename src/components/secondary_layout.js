@@ -17,7 +17,7 @@ const SecondaryLayout = ({ children }) => {
   return (
     <Layout>
       <nav className="w-full bg-blue-600 px-6 py-1 flex justify-between">
-        <div className="w-1/6 mr-6">
+        <div className="w-3/4 md:w-1/6 mr-6">
           <div className="w-full mx-auto">
             <Logo />
           </div>
