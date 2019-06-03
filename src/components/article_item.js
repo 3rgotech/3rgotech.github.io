@@ -1,27 +1,31 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
-import Logo from "./logo"
-
-const ArticleItem = (props) => {
+const ArticleItem = ({ post }) => {
   return (
     <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
       <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
-        <Logo />
+        <Img sizes={post.frontmatter.image.childImageSharp.sizes} />
       </div>
-      <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
+      <h3 className="text-3xl my-6 text-center">{post.frontmatter.title}</h3>
       <p className="text-lg">
-        Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
-          </p>
+        {post.frontmatter.excerpt}
+      </p>
       <ul className="actions text-center mt-10 pb-2">
-        <li><a href="/" className="btn btn-gray">More</a></li>
+        <li>
+          <Link to={post.frontmatter.path} className="btn btn-gray">
+            Plus
+          </Link>
+        </li>
       </ul>
     </div>
   )
 }
 
 ArticleItem.propTypes = {
-  color: PropTypes.string.isRequired,
+  post: PropTypes.object.isRequired,
 }
 
 export default ArticleItem
