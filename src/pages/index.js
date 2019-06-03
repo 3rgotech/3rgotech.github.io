@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Logo from "../components/logo"
+import Title from "../components/title"
 
 const IndexPage = () => (
   <Layout>
@@ -39,8 +40,7 @@ const IndexPage = () => (
     <section id="one" className="">
       <div className="md:flex p-4 md:p-16">
         <div className="mt-4 md:mt-0 md:ml-6 md:w-1/2 md:py-8 md:pr-16 text-gray-700">
-          <div className="text-5xl pb-8 text-center">Présentation</div>
-          <div className="h-px bg-gray-700 w-1/4 mx-auto">&nbsp;</div>
+          <Title color="gray-700">Présentation</Title>
           <p className="mt-8 text-lg">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
         </div>
         <div className="mt-4 md:mt-0 md:flex-shrink-0 md:w-1/2">
@@ -96,15 +96,15 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="mt-4 md:mt-0 md:ml-6 md:w-1/2 md:py-8 md:pr-16">
-        <div className="text-5xl pb-8 text-center">Compétences</div>
-        <div className="h-px bg-white w-1/4 mx-auto">&nbsp;</div>
+        <Title color="white">Compétences</Title>
         <p className="mt-8 text-lg">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
       </div>
     </section>
 
     <section id="three" className="bg-white py-8 px-2 text-gray-700">
-      <div className="text-5xl pb-8 text-center">Clients</div>
-      <div className="h-px bg-gray-700 w-1/4 mx-auto">&nbsp;</div>
+      <div className="w-1/2 mx-auto">
+        <Title color="gray-700">Clients</Title>
+      </div>
       <div className="md:flex md:flex-wrap md:justify-center md:px-16">
         <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
           <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
@@ -171,8 +171,7 @@ const IndexPage = () => (
 
     <section id="four" className="bg-gray-600 p-4 md:p-16 text-white">
       <div className="mx-auto">
-        <div className="text-5xl pb-8 text-center">Contact</div>
-        <div className="h-px bg-white w-1/4 mx-auto">&nbsp;</div>
+        <Title color="white">Contact</Title>
         <form action="https://formspree.io/romain@3rgo.tech" method="POST" className="w-full md:w-1/2 mx-auto my-8">
           <input type="hidden" name="_subject" value="Contact via le site 3rgo.tech" />
           <input type="text" name="_gotcha" className="hidden" />
