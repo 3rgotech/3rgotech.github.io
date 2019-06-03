@@ -32,15 +32,15 @@ const IndexPage = () => (
             </ScrollLink>
           </li>
         </ul>
-        <div className="absolute left-1/2 bg-white w-px h-64 mt-px">&nbsp;</div>
+        <div className="absolute left-1/2 bg-white w-px h-20 md:h-64 mt-px">&nbsp;</div>
       </div>
     </section>
 
     <section id="one" className="">
       <div className="md:flex p-4 md:p-16">
         <div className="mt-4 md:mt-0 md:ml-6 md:w-1/2 md:py-8 md:pr-16 text-gray-700">
-          <div className="text-5xl pb-8">Présentation</div>
-          <div className="h-px bg-gray-700 w-1/4">&nbsp;</div>
+          <div className="text-5xl pb-8 text-center">Présentation</div>
+          <div className="h-px bg-gray-700 w-1/4 mx-auto">&nbsp;</div>
           <p className="mt-8 text-lg">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
         </div>
         <div className="mt-4 md:mt-0 md:flex-shrink-0 md:w-1/2">
@@ -62,34 +62,42 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="two" className="bg-gray-600 md:flex p-16">
-      <div className="md:flex-shrink-0 md:w-1/2">
+    <section id="two" className="bg-gray-600 md:flex p-4 md:p-16">
+      <div className="mx-auto md:flex-shrink-0 md:w-1/2">
         <div id="icons" className="md:flex md:flex-wrap md:justify-center md:py-8">
-          <div className="border border-white rounded md:w-1/2 px-8 py-10 m-12 my-16 md:my-12">
-            <div className="w-full h-full text-blue-500">
-              <FontAwesomeIcon fixedWidth size="4x" icon="ruler-combined" />
+          <div className="w-full md:w-1/2 my-16">
+            <div className="iconborder border border-white rounded mx-auto">
+              <div className="w-full h-full flex items-center justify-center text-blue-500">
+                <FontAwesomeIcon fixedWidth size="4x" icon="ruler-combined" />
+              </div>
             </div>
           </div>
-          <div className="border border-white rounded md:w-1/2 px-8 py-10 m-12 my-16 md:my-12">
-            <div className="w-full h-full text-blue-600">
-              <FontAwesomeIcon fixedWidth size="4x" icon="code" />
+          <div className="w-full md:w-1/2 my-16">
+            <div className="iconborder border border-white rounded mx-auto">
+              <div className="w-full h-full flex items-center justify-center text-blue-600">
+                <FontAwesomeIcon fixedWidth size="4x" icon="code" />
+              </div>
             </div>
           </div>
-          <div className="border border-white rounded md:w-1/2 px-8 py-10 m-12 my-16 md:my-12">
-            <div className="w-full h-full text-blue-700">
-              <FontAwesomeIcon fixedWidth size="4x" icon="chart-line" />
+          <div className="w-full md:w-1/2 my-16">
+            <div className="iconborder border border-white rounded mx-auto">
+              <div className="w-full h-full flex items-center justify-center text-blue-700">
+                <FontAwesomeIcon fixedWidth size="4x" icon="chart-line" />
+              </div>
             </div>
           </div>
-          <div className="border border-white rounded md:w-1/2 px-8 py-10 m-12 my-16 md:my-12">
-            <div className="w-full h-full text-blue-800">
-              <FontAwesomeIcon fixedWidth size="4x" icon="chalkboard-teacher" />
+          <div className="w-full md:w-1/2 my-16">
+            <div className="iconborder border border-white rounded mx-auto">
+              <div className="w-full h-full flex items-center justify-center text-blue-800">
+                <FontAwesomeIcon fixedWidth size="4x" icon="chalkboard-teacher" />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="mt-4 md:mt-0 md:ml-6 md:w-1/2 md:py-8 md:pr-16">
-        <div className="text-5xl pb-8">Compétences</div>
-        <div className="h-px bg-white w-1/4">&nbsp;</div>
+        <div className="text-5xl pb-8 text-center">Compétences</div>
+        <div className="h-px bg-white w-1/4 mx-auto">&nbsp;</div>
         <p className="mt-8 text-lg">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
       </div>
     </section>
