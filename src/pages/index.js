@@ -99,7 +99,7 @@ const IndexPage = () => (
       <div className="h-px bg-gray-700 w-1/4 mx-auto">&nbsp;</div>
       <div className="md:flex md:flex-wrap md:justify-center md:px-16">
         <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-300 rounded-lg p-4">
+          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
             <Logo />
           </div>
           <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
@@ -111,7 +111,7 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-300 rounded-lg p-4">
+          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
             <Logo />
           </div>
           <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
@@ -123,7 +123,7 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-300 rounded-lg p-4">
+          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
             <Logo />
           </div>
           <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
@@ -135,7 +135,7 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-300 rounded-lg p-4">
+          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
             <Logo />
           </div>
           <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
@@ -147,7 +147,7 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-300 rounded-lg p-4">
+          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
             <Logo />
           </div>
           <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
