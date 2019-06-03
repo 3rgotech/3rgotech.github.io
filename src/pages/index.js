@@ -4,9 +4,10 @@ import { Link as ScrollLink } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Img from "gatsby-image"
 
+import ArticleItem from "../components/article_item"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Logo from "../components/logo"
+import SEO from "../components/seo"
 import Title from "../components/title"
 
 const IndexPage = () => (
@@ -106,66 +107,11 @@ const IndexPage = () => (
         <Title color="gray-700">Clients</Title>
       </div>
       <div className="md:flex md:flex-wrap md:justify-center md:px-16">
-        <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
-            <Logo />
-          </div>
-          <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
-          <p className="text-lg">
-            Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
-          </p>
-          <ul className="actions text-center mt-10 pb-2">
-            <li><a href="/" className="btn btn-gray">More</a></li>
-          </ul>
-        </div>
-        <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
-            <Logo />
-          </div>
-          <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
-          <p className="text-lg">
-            Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
-          </p>
-          <ul className="actions text-center mt-10 pb-2">
-            <li><a href="/" className="btn btn-gray">More</a></li>
-          </ul>
-        </div>
-        <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
-            <Logo />
-          </div>
-          <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
-          <p className="text-lg">
-            Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
-          </p>
-          <ul className="actions text-center mt-10 pb-2">
-            <li><a href="/" className="btn btn-gray">More</a></li>
-          </ul>
-        </div>
-        <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
-            <Logo />
-          </div>
-          <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
-          <p className="text-lg">
-            Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
-          </p>
-          <ul className="actions text-center mt-10 pb-2">
-            <li><a href="/" className="btn btn-gray">More</a></li>
-          </ul>
-        </div>
-        <div className="w-3/4 md:w-1/4 mx-auto mt-6 md:m-6">
-          <div className="w-full mx-auto bg-gray-200 rounded-lg p-4">
-            <Logo />
-          </div>
-          <h3 className="text-3xl my-6 text-center">Magna feugiat lorem</h3>
-          <p className="text-lg">
-            Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.
-          </p>
-          <ul className="actions text-center mt-10 pb-2">
-            <li><a href="/" className="btn btn-gray">More</a></li>
-          </ul>
-        </div>
+        <ArticleItem />
+        <ArticleItem />
+        <ArticleItem />
+        <ArticleItem />
+        <ArticleItem />
       </div>
     </section>
 
