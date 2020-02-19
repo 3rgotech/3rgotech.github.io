@@ -19,7 +19,7 @@ const ArticleItem = ({ post }) => {
       <h4 className="text-xl">{post.frontmatter.excerpt}</h4>
       <ul className="actions mt-6 mb-6">
         <li>
-          <Link to={post.frontmatter.path} className="btn btn-gray">
+          <Link to={post.frontmatter.path} className="btn-sm btn-gray">
             Plus
           </Link>
         </li>

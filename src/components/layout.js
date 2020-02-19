@@ -10,12 +10,12 @@ import PropTypes from "prop-types"
 import { Link, StaticQuery, graphql } from "gatsby"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faChalkboardTeacher, faChartLine, faCode, faRulerCombined } from '@fortawesome/free-solid-svg-icons'
+import { faChalkboardTeacher, faCode, faRulerCombined, faStethoscope } from '@fortawesome/free-solid-svg-icons'
 
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  library.add(faChalkboardTeacher, faChartLine, faCode, faRulerCombined)
+  library.add(faChalkboardTeacher, faCode, faRulerCombined, faStethoscope)
 
   return (
     <StaticQuery

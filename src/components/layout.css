@@ -59,3 +59,15 @@ section#two, section#four {
 #footer a {
     @apply .border-b .border-dotted;
 }
+
+.stylistic-quote-mark {
+    font-size: 5rem;
+    right: 100%;
+    @apply mr-2 hidden text-gray-500 absolute top-0 leading-none;
+}
+
+@screen sm {
+    .stylistic-quote-mark {
+        @apply block;
+    }
+}

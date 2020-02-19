@@ -1,5 +1,6 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import { Link as ScrollLink } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -12,7 +13,8 @@ import Title from "../components/title"
 const IndexPage = ({
     data: {
         allMarkdownRemark: { edges },
-    },
+        musk
+    }
 }) => {
     const Articles = edges
         .map(edge => <ArticleItem key={edge.node.id} post={edge.node} />)
@@ -27,7 +29,7 @@ const IndexPage = ({
                     </div>
                     <h1 className="text-4xl mt-4">
                         Développement Web <span className="font-bold">&</span> Formation
-                </h1>
+                    </h1>
                     <ul className="actions relative text-center mt-64 pb-3">
                         <li>
                             <ScrollLink
@@ -45,11 +47,36 @@ const IndexPage = ({
                 </div>
             </section>
 
-            <section id="one" className="">
+            <section id="one" className="w-full h-screen">
                 <div className="md:flex p-4 md:p-16">
                     <div className="mt-4 md:mt-0 md:ml-6 md:w-1/2 md:py-8 md:pr-16 text-gray-700">
                         <Title color="gray-700">Présentation</Title>
-                        <p className="mt-8 text-lg">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                        <p className="mt-8 mb-6 text-lg">
+                            <blockquote className="relative p-4 text-xl italic border-l-4 bg-gray-100 text-gray-600 border-gray-500 quote">
+                                <div className="stylistic-quote-mark" aria-hidden="true">
+                                    &ldquo;
+                                </div>
+                                <p className="mb-4">
+                                    People should pursue what they're passionate about. That will make them happier than pretty much anything else.
+                                </p>
+                                <cite className="flex items-center">
+                                    <Img
+                                        fixed={musk.childImageSharp.fixed}
+                                        alt="Elon Musk"
+                                        className="w-12 mr-4 rounded-full bg-gray-500"
+                                    />
+                                    <div className="flex flex-col items-start">
+                                        <span className="mb-1 text-sm italic font-bold">Elon Musk</span>
+                                    </div>
+                                </cite>
+                            </blockquote>
+                        </p>
+                        <p className="mt-8 text-lg">
+                            Consequat elit cillum nulla id nulla consequat consequat tempor ex. Ea mollit nostrud fugiat est deserunt magna pariatur. Cupidatat tempor est duis Lorem nulla enim magna ex ipsum. Consequat enim sit sunt aliqua officia consequat. Mollit in id occaecat excepteur veniam quis laboris ad excepteur. Irure enim aute voluptate irure ex esse laborum laborum nulla ut eiusmod id magna fugiat.
+                        </p>
+                        <p className="mt-8 text-lg">
+                            Consequat elit cillum nulla id nulla consequat consequat tempor ex. Ea mollit nostrud fugiat est deserunt magna pariatur. Cupidatat tempor est duis Lorem nulla enim magna ex ipsum. Consequat enim sit sunt aliqua officia consequat. Mollit in id occaecat excepteur veniam quis laboris ad excepteur. Irure enim aute voluptate irure ex esse laborum laborum nulla ut eiusmod id magna fugiat.
+                        </p>
                     </div>
                     <div className="mt-4 md:mt-0 md:flex-shrink-0 md:w-1/2">
                         {/* <StaticQuery
@@ -67,6 +94,22 @@ const IndexPage = ({
                             render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
                         /> */}
                     </div>
+                </div>
+                <div>
+                    <ul className="actions relative text-center pb-3">
+                        <li>
+                            <ScrollLink
+                                to="two"
+                                smooth={true}
+                                offset={0}
+                                duration={500}
+                                className="btn btn-gray"
+                            >
+                                Compétences
+                        </ScrollLink>
+                        </li>
+                    </ul>
+                    <div className="absolute left-1/2 bg-gray-700 w-px h-5 md:h-20 b-4 mt-px">&nbsp;</div>
                 </div>
             </section>
 
@@ -90,7 +133,7 @@ const IndexPage = ({
                         <div className="w-full md:w-1/2 my-16">
                             <div className="iconborder border border-white rounded mx-auto">
                                 <div className="w-full h-full flex items-center justify-center text-blue-700">
-                                    <FontAwesomeIcon fixedWidth size="4x" icon="chart-line" />
+                                    <FontAwesomeIcon fixedWidth size="4x" icon="stethoscope" />
                                 </div>
                             </div>
                         </div>
@@ -158,23 +201,29 @@ export default IndexPage
 
 export const pageQuery = graphql`
     query {
-        allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }) {
-            edges {
+                allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___order] }) {
+                edges {
                 node {
-                    id
+                id
                     frontmatter {
-                        path
-                        title
+                title
                         excerpt
                         clientImage {
-                            childImageSharp{
-                                fixed(height: 250, quality: 75) {
-                                    ...GatsbyImageSharpFixed
-                                }
-                            }
-                        }
-                    }
-                }
+                childImageSharp{
+                fixed(height: 250, quality: 75) {
+                ...GatsbyImageSharpFixed
+            }
+            }
+        }
+    }
+}
+}
+}
+        musk: file(relativePath: {eq: "musk.png"}) {
+                childImageSharp {
+                fixed(width: 50, height: 50) {
+                ...GatsbyImageSharpFixed
+            }
             }
         }
     }
