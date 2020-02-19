@@ -1,7 +1,7 @@
 ---
 path: "/clients/mshs-t"
 order: 10
-title: "Maison des Sciences de l'Homme et de la Société de Toulouse"
+title: "MSHS Toulouse"
 clientImage: mshst.jpg
 excerpt: "Développeur Web Fullstack"
 location: "Toulouse (31)"

@@ -12,7 +12,7 @@ export default function Template({
     <SecondaryLayout>
       <div className="blog-post-container">
         <div className="blog-post">
-          <Img sizes={frontmatter.image.childImageSharp.sizes} />
+          <Img sizes={frontmatter.clientImage.childImageSharp.sizes} />
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.location}</h2>
           <div
@@ -33,7 +33,7 @@ export const pageQuery = graphql`
         path
         title
         location
-        image {
+        clientImage {
           childImageSharp{
             sizes(maxWidth: 630) {
               ...GatsbyImageSharpSizes

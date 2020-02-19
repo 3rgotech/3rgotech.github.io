@@ -1,12 +1,12 @@
 ---
 path: "/clients/flowbird"
 order: 30
-title: "Flowbird Group"
+title: "Flowbird"
 clientImage: flowbird.png
 excerpt: "Développeur Web Fullstack"
 location: "Besançon (25)"
 ---
-Développeur Web Backend pour le compte de [Flowbird Group](https://flowbird.group/) (anciennement Parkéon), acteur mondial des solutions de gestion du stationnement et de billetique.
+Développeur Web Backend pour le compte de [Flowbird France](https://flowbird.fr/) (anciennement Parkéon), acteur mondial des solutions de gestion du stationnement et de billetique.
 
 Réalisation d'un projet au forfait.
 
