@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 80802917-8d90-4324-9d46-03c0930abb63
-updated_at: 1636186813
+updated_by: 952340d1-c13d-4093-9232-626dd669dba0
+updated_at: 1649799925
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -19,7 +19,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Start out on top'
+            text: 'Chaque besoin a sa solution sur-mesure'
       -
         type: paragraph
         content:
@@ -50,13 +50,7 @@ page_builder:
         target_blank: false
         link_type: entry
         entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
-        url: null
-        email: null
-        tel: null
-        asset: null
         button_type: inline
-        attr_title: null
-        attr_aria: null
         show_controls: false
       -
         title: 'Long form content'
@@ -65,13 +59,7 @@ page_builder:
         target_blank: false
         link_type: entry
         entry: 20f6a148-63b8-47a8-9b0e-d57095d78c21
-        url: null
-        email: null
-        tel: null
-        asset: null
         button_type: inline
-        attr_title: null
-        attr_aria: null
         show_controls: false
       -
         title: 'Way more features'
@@ -79,14 +67,8 @@ page_builder:
         label: 'Scavenge the docs'
         target_blank: true
         link_type: url
-        entry: null
         url: 'https://peak.studio1902.nl/'
-        email: null
-        tel: null
-        asset: null
         button_type: inline
-        attr_title: null
-        attr_aria: null
         show_controls: false
     type: link_blocks
     enabled: true
