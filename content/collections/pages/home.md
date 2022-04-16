@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 952340d1-c13d-4093-9232-626dd669dba0
-updated_at: 1649799925
+updated_at: 1650103690
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -19,25 +19,39 @@ page_builder:
         content:
           -
             type: text
-            text: 'Chaque besoin a sa solution sur-mesure'
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: center
+            text: 'Conception et Développement Web sur mesure'
+      -
+        type: heading
+        attrs:
+          level: 2
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: center
+            text: 'Audit et Conseil / Formation'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Peak is your personal bespoke development sherpa. Start every project with this kit full of development goodies. '
+            text: 'Depuis 2019, je conçois et développe des sites et applications web sur mesure pour mes clients. '
       -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'But beware, this kit ain''t here to be pretty. There are some examples of what Peak can do, but the rest is up to you. '
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Get climbing!'
+        type: set
+        attrs:
+          values:
+            type: pull_quote
+            size: xl
+            quote: 'Software is the language of automation.'
+            author: 'Jensen Huang'
     type: article
     enabled: true
   -

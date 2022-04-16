@@ -2,3 +2,7 @@ name: Romain
 super: true
 id: 952340d1-c13d-4093-9232-626dd669dba0
 password_hash: $2y$10$wjUWEJyZF/EGTu9wvPq.9OiRfHtBUSN/5GUFCZljFB6RCh1cLiBTi
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
