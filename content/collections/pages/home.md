@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 952340d1-c13d-4093-9232-626dd669dba0
-updated_at: 1650103690
+updated_at: 1650116623
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -44,14 +44,16 @@ page_builder:
           -
             type: text
             text: 'Depuis 2019, je conçois et développe des sites et applications web sur mesure pour mes clients. '
+    type: article
+    enabled: true
+  -
+    article:
       -
-        type: set
-        attrs:
-          values:
-            type: pull_quote
-            size: xl
-            quote: 'Software is the language of automation.'
-            author: 'Jensen Huang'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Depuis 2019, nous concevons et développons des sites web et applications web sur mesure pour nos clients. Notre objectif est toujours le même : améliorer la manière dont ils travaillent.'
     type: article
     enabled: true
   -
